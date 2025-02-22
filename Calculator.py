@@ -1,21 +1,21 @@
 class Calculator:
-    def somar(x,y):
+    def somar(self, x, y):
         return x + y;
     
-    def subtrair(x,y):
+    def subtrair(self, x, y):
         return x - y;
 
-    def multiplicar(x,y):
+    def multiplicar(self, x ,y):
         return x * y;
 
-    def dividir(x,y):
+    def dividir(self, x, y):
         return x / y;
         
-    def fatorial(n):
+    def fatorial(self, n):
         if n == 0:
             return 1
         else:
-            return n * fatorial(n - 1)
+            return n * self.fatorial(n - 1)
 
-    def potencia(x,y):
+    def potencia(self, x, y):
         return pow(x,y)
