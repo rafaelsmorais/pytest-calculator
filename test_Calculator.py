@@ -38,3 +38,18 @@ class TestDividir:
     def test_dividir_negativo(self):
         assert calculator.dividir(6,-2) == -3.0
         assert calculator.dividir(-8,4) == -2.0
+
+class TestFatorial:
+    def test_fatorial_positivo(self):
+        assert calculator.fatorial(5) == 120
+    
+    def test_fatorial_zero(self):
+        assert calculator.fatorial(0) == 1
+
+class TestPotencia:
+    def test_potencia_positivo(self):
+        assert calculator.potencia(5,2) == 25
+
+    def test_potencia_negativo(self):
+        assert calculator.potencia(-5,2) == 25
+        assert calculator.potencia(-3,3) == -27
